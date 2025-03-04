@@ -1,0 +1,26 @@
+:root{
+    --EBRichBlack: #0D1821;
+    --EBGreen: #6EEB83;
+    --EBSlateGray: #878E99;
+    --EBLemon: #E4FF1A;
+    --EBWhite: #FFFCFF;
+}
+
+nav{
+    background-color: lightgreen ;
+}
+
+footer{
+    background-color: var(--EBRichBlack);
+    height: 100px;
+}
+
+#footerText{
+    color: var(--EBWhite);
+}
+
+@media all and (max-width:700px) {
+    #borneContainer{
+        order:-1;
+    }
+}
