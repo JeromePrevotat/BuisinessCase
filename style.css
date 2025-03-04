@@ -10,6 +10,10 @@ nav{
     background-color: lightgreen ;
 }
 
+table{
+    border: solid var(--EBRichBlack) 2px;
+}
+
 footer{
     background-color: var(--EBRichBlack);
     height: 100px;

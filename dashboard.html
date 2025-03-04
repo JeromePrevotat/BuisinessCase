@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Electricity Buisiness</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -48,128 +48,172 @@
         </nav>
     </header>
     <main>
-        <div class="d-flex flex-column">
-            <table id="booked" class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table id="pastBooking" class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div id="borneContainer" class="d-flex flex-wrap">
-                <div>
-                    <h3>Borne 1</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Mes réservations en cours:</h2>
+                    <table id="booked" class="table table-sm table-hover table-bordered border-black">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date et Heure début</th>
+                                <th scope="col">Date et Heure fin</th>
+                                <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
+                                <th scope="col">Montant réglé</th>
+                                <th scope="col">Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry the Bird</td>
+                                <td>Larry the Bird</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-12">
+                <h2>Mes réservations en passées:</h2>
+                <table id="pastBooking" class="table table-bordered border-black table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date et Heure début</th>
+                            <th scope="col">Date et Heure fin</th>
+                            <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
+                            <th scope="col">Montant réglé</th>
+                            <th scope="col">Statut</th>
+                            <th scope="col">Reçu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <h2>Lieux de recharge:</h2>
+                <div id="borneContainer" class="d-flex flex-wrap">
+                    <div>
+                        <h3>Borne 1</h3>
+                    </div>
                 </div>
             </div>
-            <table id="toProcessBooking" class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table id="processedBooking" class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="col-md-12">
+                <h2>Demandes de réservations à traiter:</h2>
+                <table id="toProcessBooking" class="table  table-bordered border-black table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date et Heure début</th>
+                            <th scope="col">Date et Heure fin</th>
+                            <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
+                            <th scope="col">Montant réglé</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <h2>Demandes de réservations traitées:</h2>
+                <table id="processedBooking" class="table table-bordered border-black table-sm table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date et Heure début</th>
+                            <th scope="col">Date et Heure fin</th>
+                            <th scope="col">Utilisateur</th>
+                            <th scope="col">Borne, Lieu</th>
+                            <th scope="col">Montant réglé</th>
+                            <th scope="col">Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     <footer>
