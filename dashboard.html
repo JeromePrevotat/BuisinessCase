@@ -133,154 +133,161 @@
                 <div id="pastBooking" class="row">
                     <div class="col-md-12">
                         <h2>Mes réservations en passées:</h2>
-                        <div id="filterBar" class="d-flex">
-                            <input class="filterComponent" type="datetime-local">
-                            <input class="filterComponent" type="datetime-local">
-                            <button class="filterComponent" class="submit">Filtrer</button>
+                        <div id="filterBar" class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Date de début</span>
+                            <input type="datetime-local" class="form-control filterComponent"
+                                placeholder="jj/mm/aaaa hh:mm" aria-label="jj/mm/aaaa hh:mm"
+                                aria-describedby="basic-addon1">
+                            <span class="input-group-text" id="basic-addon1">Date de fin</span>
+                            <input type="datetime-local" class="form-control filterComponent"
+                                placeholder="jj/mm/aaaa hh:mm" aria-label="jj/mm/aaaa hh:mm"
+                                aria-describedby="basic-addon1">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Filtrer</button>
                         </div>
-                        <table class="table text-center table-bordered border-black table-responsive-sm table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Date et Heure début</th>
-                                    <th scope="col">Date et Heure fin</th>
-                                    <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
-                                    <th scope="col">Montant réglé</th>
-                                    <th scope="col">Statut</th>
-                                    <th scope="col">Reçu</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row">06/02/2023 09:00</td>
-                                    <td>06/02/2023 17:00</td>
-                                    <td>Borne 1; au Clos du lac; LE BOURGET; Lola SOT</td>
-                                    <td>18.00€</td>
-                                    <td>Accepté</td>
-                                    <td>
-                                        <a href="#"><i class="fa-solid fa-receipt"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">10/05/2023 11:30</td>
-                                    <td>10/05/2023 19:30</td>
-                                    <td>Borne 2; rue des Fleurs; ST CHAMOND; Dante RAOUX</td>
-                                    <td>36.00€</td>
-                                    <td>Accepté</td>
-                                    <td>
-                                        <a href="#"><i class="fa-solid fa-receipt"></i></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">02/08/2023 08:00</td>
-                                    <td>03/08/2023 14:00</td>
-                                    <td>Borne 3; rue des Sources; PARIS; Gugus PRINCE</td>
-                                    <td>24.00€</td>
-                                    <td>Refusé</td>
-                                    <td>
-                                        <a href="#"><i class="fa-solid fa-receipt"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
-                    <a class="tableAnchors" href="#">Exporter toutes les réservations au format Excel</a>
+                    <table class="table text-center table-bordered border-black table-responsive-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date et Heure début</th>
+                                <th scope="col">Date et Heure fin</th>
+                                <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
+                                <th scope="col">Montant réglé</th>
+                                <th scope="col">Statut</th>
+                                <th scope="col">Reçu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">06/02/2023 09:00</td>
+                                <td>06/02/2023 17:00</td>
+                                <td>Borne 1; au Clos du lac; LE BOURGET; Lola SOT</td>
+                                <td>18.00€</td>
+                                <td>Accepté</td>
+                                <td>
+                                    <a href="#"><i class="fa-solid fa-receipt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">10/05/2023 11:30</td>
+                                <td>10/05/2023 19:30</td>
+                                <td>Borne 2; rue des Fleurs; ST CHAMOND; Dante RAOUX</td>
+                                <td>36.00€</td>
+                                <td>Accepté</td>
+                                <td>
+                                    <a href="#"><i class="fa-solid fa-receipt"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">02/08/2023 08:00</td>
+                                <td>03/08/2023 14:00</td>
+                                <td>Borne 3; rue des Sources; PARIS; Gugus PRINCE</td>
+                                <td>24.00€</td>
+                                <td>Refusé</td>
+                                <td>
+                                    <a href="#"><i class="fa-solid fa-receipt"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div id="toProcessBooking" class="row">
-                    <div class="col-md-12">
-                        <h2>Demandes de réservations à traiter:</h2>
-                        <table class="table text-center table-responsive-sm table-bordered border-black table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Date et Heure début</th>
-                                    <th scope="col">Date et Heure fin</th>
-                                    <th scope="col">Utilisateur</th>
-                                    <th scope="col">Borne, Lieu</th>
-                                    <th scope="col">Montant réglé</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row">06/10/2023 06:00</td>
-                                    <td>06/10/2023 13:00</td>
-                                    <td>Pierre MARTIN</td>
-                                    <td>Borne 1; 8 rue Mozart</td>
-                                    <td>28.00€</td>
-                                    <td>
-                                        <button class="btn btn-outline-success">Accepter</button>
-                                        <button class="btn btn-outline-danger">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">12/10/2023 10:00</td>
-                                    <td>12/10/2023 14:00</td>
-                                    <td>Capucine DUPONT</td>
-                                    <td>Borne 1; 4 Avenue de la République</td>
-                                    <td>16.00€</td>
-                                    <td>
-                                        <button class="btn btn-outline-success">Accepter</button>
-                                        <button class="btn btn-outline-danger">Refuser</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">20/10/2023 13:00</td>
-                                    <td>21/10/2023 18:00</td>
-                                    <td>Louise SANTI</td>
-                                    <td>Borne 2; 8 rue Mozart</td>
-                                    <td>20.00€</td>
-                                    <td>
-                                        <button class="btn btn-outline-success">Accepter</button>
-                                        <button class="btn btn-outline-danger">Refuser</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div id="processedBooking" class="row">     
-                    <div class="col-md-12">
-                        <h2>Demandes de réservations traitées:</h2>
-                        <table class="table text-center table-responsive-sm table-bordered border-black table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Date et Heure début</th>
-                                    <th scope="col">Date et Heure fin</th>
-                                    <th scope="col">Utilisateur</th>
-                                    <th scope="col">Borne, Lieu</th>
-                                    <th scope="col">Montant réglé</th>
-                                    <th scope="col">Statut</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td scope="row">26/09/2023 06:00</td>
-                                    <td>26/09/2023 13:00</td>
-                                    <td>Stephane HENRI</td>
-                                    <td>Borne 1; 8 rue Mozart</td>
-                                    <td>18.00€</td>
-                                    <td>Accepté</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">27/09/2023 20:00</td>
-                                    <td>28/09/2023 04:00</td>
-                                    <td>Rachel DOS SANTOS</td>
-                                    <td>Borne 1; 4 avenue de la République</td>
-                                    <td>32.00€</td>
-                                    <td>Refusé</td>
-                                </tr>
-                                <tr>
-                                    <td scope="row">28/09/2023 13:00</td>
-                                    <td>28/09/2023 18:00</td>
-                                    <td>Margaux CELLARIER</td>
-                                    <td>Borne 2; 8 rue Mozart</td>
-                                    <td>20.00€</td>
-                                    <td>Accepté</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <a class="tableAnchors" href="#">Exporter toutes les réservations au format Excel</a>
+            </div>
+            <div id="toProcessBooking" class="row">
+                <div class="col-md-12">
+                    <h2>Demandes de réservations à traiter:</h2>
+                    <table class="table text-center table-responsive-sm table-bordered border-black table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date et Heure début</th>
+                                <th scope="col">Date et Heure fin</th>
+                                <th scope="col">Utilisateur</th>
+                                <th scope="col">Borne, Lieu</th>
+                                <th scope="col">Montant réglé</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">06/10/2023 06:00</td>
+                                <td>06/10/2023 13:00</td>
+                                <td>Pierre MARTIN</td>
+                                <td>Borne 1; 8 rue Mozart</td>
+                                <td>28.00€</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Accepter</button>
+                                    <button class="btn btn-outline-danger">Refuser</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">12/10/2023 10:00</td>
+                                <td>12/10/2023 14:00</td>
+                                <td>Capucine DUPONT</td>
+                                <td>Borne 1; 4 Avenue de la République</td>
+                                <td>16.00€</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Accepter</button>
+                                    <button class="btn btn-outline-danger">Refuser</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">20/10/2023 13:00</td>
+                                <td>21/10/2023 18:00</td>
+                                <td>Louise SANTI</td>
+                                <td>Borne 2; 8 rue Mozart</td>
+                                <td>20.00€</td>
+                                <td>
+                                    <button class="btn btn-outline-success">Accepter</button>
+                                    <button class="btn btn-outline-danger">Refuser</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <div id="processedBooking" class="row">
+                <div class="col-md-12">
+                    <h2>Demandes de réservations traitées:</h2>
+                    <table class="table text-center table-responsive-sm table-bordered border-black table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date et Heure début</th>
+                                <th scope="col">Date et Heure fin</th>
+                                <th scope="col">Utilisateur</th>
+                                <th scope="col">Borne, Lieu</th>
+                                <th scope="col">Montant réglé</th>
+                                <th scope="col">Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">26/09/2023 06:00</td>
+                                <td>26/09/2023 13:00</td>
+                                <td>Stephane HENRI</td>
+                                <td>Borne 1; 8 rue Mozart</td>
+                                <td>18.00€</td>
+                                <td>Accepté</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">27/09/2023 20:00</td>
+                                <td>28/09/2023 04:00</td>
+                                <td>Rachel DOS SANTOS</td>
+                                <td>Borne 1; 4 avenue de la République</td>
+                                <td>32.00€</td>
+                                <td>Refusé</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">28/09/2023 13:00</td>
+                                <td>28/09/2023 18:00</td>
+                                <td>Margaux CELLARIER</td>
+                                <td>Borne 2; 8 rue Mozart</td>
+                                <td>20.00€</td>
+                                <td>Accepté</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
         </div>
     </main>
     <footer class="d-flex justify-content-center align-items-center">
