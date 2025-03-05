@@ -44,6 +44,13 @@ table{
     border: solid var(--EBRichBlack) 2px;
 }
 
+.page-link {
+    color: black;
+    border: solid black 1px;
+    border-radius: 5px;
+
+}
+
 .tableAnchors{
     margin-top: 0px;
     margin-bottom: 15px;
