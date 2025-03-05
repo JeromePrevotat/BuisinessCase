@@ -20,7 +20,6 @@
     font-family: "Roboto Condensed", Arial, sans-serif;
 }
 
-
 h2{
     margin-top: 15px;
     font-family: "Maven Pro", Arial, sans-serif;
@@ -37,7 +36,9 @@ h3{
 }
 
 .navbar{
-    background-color: lightgreen ;
+    background-color: var(--EBGreen) ;
+    border-radius: 0px 0px 25px 25px;
+    background: linear-gradient(var(--EBGreen), var(--EBLemon));
 }
 
 table{
