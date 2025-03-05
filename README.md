@@ -3,10 +3,10 @@ HB Buisiness Case
 
 responsive
 
+padding button
 darkmode
-sticky navbar + scrollspy
+navbar scrollspy
 stick table links to tables
 fix fonts
 fix width first table
-filter bar
-fix borne card border
+filter bar border
