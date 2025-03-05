@@ -36,7 +36,7 @@ h3{
     border-radius: 5px;
 }
 
-nav{
+.navbar{
     background-color: lightgreen ;
 }
 
@@ -61,6 +61,11 @@ table{
 
 .filterComponent{
     margin-right: 5px;
+}
+
+.btn-process{
+    padding: 5px;
+    margin: 5px;
 }
 
 footer{
