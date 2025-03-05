@@ -14,6 +14,16 @@ table{
     border: solid var(--EBRichBlack) 2px;
 }
 
+.borneTitle{
+    width: 100%;
+    align-items: center;
+}
+
+.borneImg{
+    width: 250px;
+    height: 250px;
+}
+
 footer{
     background-color: var(--EBRichBlack);
     height: 100px;
@@ -24,7 +34,7 @@ footer{
 }
 
 @media all and (max-width:700px) {
-    #borneContainer{
+    #borneLocation{
         order:-1;
     }
 }
