@@ -39,46 +39,95 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Mes réservations en cours:</h2>
-                    <table id="booked" class="table table-responsive-sm table-hover table-bordered border-black">
-                        <thead>
-                            <tr>
-                                <th scope="col">Date et Heure début</th>
-                                <th scope="col">Date et Heure fin</th>
-                                <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
-                                <th scope="col">Montant réglé</th>
-                                <th scope="col">Statut</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td scope="row">06/10/2023 09:00</td>
-                                <td>06/10/2023 17:00</td>
-                                <td>Borne 1; au clos Fleuris; LYON; Max DURAND</td>
-                                <td>24.00€</td>
-                                <td>En Attente</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">12/10/2023 10:00</td>
-                                <td>12/10/2023 15:00</td>
-                                <td>Borne 2; au val de Coise; THURINS; Lucien ROUX</td>
-                                <td>10.00€</td>
-                                <td>Acceptée</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">20/10/2023 21:00</td>
-                                <td>21/10/2023 06:00</td>
-                                <td>Borne 3; rue Longvie; AUBIERE; Lili MAGNIN</td>
-                                <td>18.00€</td>
-                                <td>En Attente</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div id="borneLocation" class="col-md-12">
+                    <h2>Lieux de recharge:</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-black" style="max-width: 540px;">
+                                <div class="row g-0 text-center">
+                                    <h3 class="card-title">8 rue Mozart</h3>
+                                    <div class="col-md-4">
+                                        <img src="./img/borneImg.jpg" class="img-fluid rounded-start imgBorne" alt="Image d'une borne électrique">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p>Borne 1</p>
+                                            <div class="d-flex flex-column">
+                                                <a href="#">Modifier</a>
+                                                <a href="#">Définir Tarifs Horaires</a>
+                                                <a href="#">Upload Photo</a>
+                                                <a href="#">Upload Video</a>
+                                                <a href="#">Supprimer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-3 border-black" style="max-width: 540px;">
+                                <div class="row g-0 text-center">
+                                    <h3 class="card-title">8 rue Mozart</h3>
+                                    <div class="col-md-4">
+                                        <img src="./img/borneImg.jpg" class="img-fluid rounded-start imgBorne" alt="Image d'une borne électrique">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p>Borne 1</p>
+                                            <div class="d-flex flex-column">
+                                                <a href="#">Modifier</a>
+                                                <a href="#">Définir Tarifs Horaires</a>
+                                                <a href="#">Upload Photo</a>
+                                                <a href="#">Upload Video</a>
+                                                <a href="#">Supprimer</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a class="tableAnchors" href="#">Effectuer une réservation</a>
-            </div>
-            <div class="row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Mes réservations en cours:</h2>
+                        <table id="booked" class="table table-responsive-sm table-hover table-bordered border-black">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date et Heure début</th>
+                                    <th scope="col">Date et Heure fin</th>
+                                    <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
+                                    <th scope="col">Montant réglé</th>
+                                    <th scope="col">Statut</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">06/10/2023 09:00</td>
+                                    <td>06/10/2023 17:00</td>
+                                    <td>Borne 1; au clos Fleuris; LYON; Max DURAND</td>
+                                    <td>24.00€</td>
+                                    <td>En Attente</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">12/10/2023 10:00</td>
+                                    <td>12/10/2023 15:00</td>
+                                    <td>Borne 2; au val de Coise; THURINS; Lucien ROUX</td>
+                                    <td>10.00€</td>
+                                    <td>Acceptée</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">20/10/2023 21:00</td>
+                                    <td>21/10/2023 06:00</td>
+                                    <td>Borne 3; rue Longvie; AUBIERE; Lili MAGNIN</td>
+                                    <td>18.00€</td>
+                                    <td>En Attente</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a class="tableAnchors" href="#">Effectuer une réservation</a>
+                </div>
                 <div class="col-md-12">
                     <h2>Mes réservations en passées:</h2>
                     <div id="filterBar" class="d-flex">
@@ -125,65 +174,13 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <a href="#">Exporter toutes les réservations au format Excel</a>
-            <div id="borneLocation" class="col-md-12">
-                <h2>Lieux de recharge:</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="d-flex flex-wrap">
-                            <div class="borneTitle d-flex flex-column">
-                                <h3>Borne 1</h3>
-                                <p>8 rue Mozart</p>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img class="borneImg" src="" alt="">
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="d-flex flex-column">
-                                            <a href="#">Modifier</a>
-                                            <a href="#">Définir Tarifs Horaires</a>
-                                            <a href="#">Upload Photo</a>
-                                            <a href="#">Upload Video</a>
-                                            <a href="#">Supprimer</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex flex-wrap">
-                            <div class="borneTitle d-flex flex-column">
-                                <h3>8 rue Mozart</h3>
-                                <p>Borne 1</p>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <img class="borneImg" src="" alt="">
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="d-flex flex-column">
-                                            <a href="#">Modifier</a>
-                                            <a href="#">Définir Tarifs Horaires</a>
-                                            <a href="#">Upload Photo</a>
-                                            <a href="#">Upload Video</a>
-                                            <a href="#">Supprimer</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a class="tableAnchors" href="#">Exporter toutes les réservations au format Excel</a>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <h2>Demandes de réservations à traiter:</h2>
-                    <table id="toProcessBooking" class="table table-responsive-sm table-bordered border-black table-hover">
+                    <table id="toProcessBooking"
+                        class="table table-responsive-sm table-bordered border-black table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Date et Heure début</th>
@@ -235,7 +232,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Demandes de réservations traitées:</h2>
-                    <table id="processedBooking" class="table table-responsive-sm table-bordered border-black table-hover">
+                    <table id="processedBooking"
+                        class="table table-responsive-sm table-bordered border-black table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Date et Heure début</th>
@@ -277,7 +275,7 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="d-flex justify-content-center align-items-center">
         <p id="footerText">Politique de confidentialité</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

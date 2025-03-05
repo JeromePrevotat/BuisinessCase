@@ -29,8 +29,10 @@ h2{
 }
 
 h3{
+    padding: 5px;
     font-family: "Maven Pro", Arial, sans-serif;
     font-size: 24px;
+    background-color: var(--EBLemon);
 }
 
 nav{
@@ -46,14 +48,10 @@ table{
     margin-bottom: 15px;
 }
 
-.borneTitle{
-    width: 100%;
-    align-items: center;
-}
-
-.borneImg{
-    width: 250px;
-    height: 250px;
+.imgBorne{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
 }
 
 #filterBar{
@@ -78,8 +76,11 @@ footer{
     color: var(--EBWhite);
 }
 
-@media all and (max-width:700px) {
+@media all and (min-width:700px) {
     #borneLocation{
-        order:-1;
+        order:1;
+    }
+    #toProcessBooking, #processedBooking{
+        order:2
     }
 }
