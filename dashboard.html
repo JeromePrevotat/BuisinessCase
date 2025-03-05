@@ -64,29 +64,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
+                                <td scope="row">06/10/2023 09:00</td>
+                                <td>06/10/2023 17:00</td>
+                                <td>Borne 1; au clos Fleuris; LYON; Max DURAND</td>
+                                <td>24.00€</td>
+                                <td>En Attente</td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
+                                <td scope="row">12/10/2023 10:00</td>
+                                <td>12/10/2023 15:00</td>
+                                <td>Borne 2; au val de Coise; THURINS; Lucien ROUX</td>
+                                <td>10.00€</td>
+                                <td>Acceptée</td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Larry the Bird</td>
-                                <td>Larry the Bird</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
+                                <td scope="row">20/10/2023 21:00</td>
+                                <td>21/10/2023 06:00</td>
+                                <td>Borne 3; rue Longvie; AUBIERE; Lili MAGNIN</td>
+                                <td>18.00€</td>
+                                <td>En Attente</td>
                             </tr>
                         </tbody>
                     </table>
+                    <a href="#">Effectuer une réservation</a>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-12">
                     <h2>Mes réservations en passées:</h2>
                     <table id="pastBooking" class="table table-bordered border-black table-sm table-hover">
@@ -102,36 +105,39 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
-                                <td>@mdo</td>
+                                <td scope="row">06/02/2023 09:00</td>
+                                <td>06/02/2023 17:00</td>
+                                <td>Borne 1; au Clos du lac; LE BOURGET; Lola SOT</td>
+                                <td>18.00€</td>
+                                <td>Accepté</td>
+                                <td>Icon Reçu</td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
-                                <td>@fat</td>
+                                <td scope="row">10/05/2023 11:30</td>
+                                <td>10/05/2023 19:30</td>
+                                <td>Borne 2; rue des Fleurs; ST CHAMOND; Dante RAOUX</td>
+                                <td>36.00€</td>
+                                <td>Accepté</td>
+                                <td>Icone Reçu</td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Larry the Bird</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
-                                <td>@twitter</td>
+                                <td scope="row">02/08/2023 08:00</td>
+                                <td>03/08/2023 14:00</td>
+                                <td>Borne 3; rue des Sources; PARIS; Gugus PRINCE</td>
+                                <td>24.00€</td>
+                                <td>Refusé</td>
+                                <td>Icone Reçu</td>
                             </tr>
                         </tbody>
                     </table>
+                    <a href="#">Exporter toutes les réservations au format Excel</a>
                 </div>
-                <div id="borneLocation">
+            </div>
+            <div class="row">
+                <div id="borneLocation" class="col-md-12">
                     <h2>Lieux de recharge:</h2>
                     <div class="col-md-6">
-                        <div id="borneContainer" class="d-flex flex-wrap">
+                        <div class="d-flex flex-wrap">
                             <div class="borneTitle d-flex flex-column">
                                 <h3>Borne 1</h3>
                                 <p>Adresse</p>
@@ -154,109 +160,126 @@
                             </div>
                         </div>
                     </div>
-                
-                <div class="col-md-6">
-                    <div id="borneContainer" class="d-flex flex-wrap">
-                        <div class="borneTitle d-flex flex-column">
-                            <h3>Borne 1</h3>
-                            <p>Adresse</p>
-                        </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img class="borneImg" src="" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <div class="d-flex flex-column">
-                                        <a href="#">Modifier</a>
-                                        <a href="#">Définir Tarifs Horaires</a>
-                                        <a href="#">Upload Photo</a>
-                                        <a href="#">Upload Video</a>
-                                        <a href="#">Supprimer</a>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-wrap">
+                            <div class="borneTitle d-flex flex-column">
+                                <h3>Borne 1</h3>
+                                <p>Adresse</p>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="borneImg" src="" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="d-flex flex-column">
+                                            <a href="#">Modifier</a>
+                                            <a href="#">Définir Tarifs Horaires</a>
+                                            <a href="#">Upload Photo</a>
+                                            <a href="#">Upload Video</a>
+                                            <a href="#">Supprimer</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div></div>
+                </div>
             </div>
-            <div class="col-md-12">
-                <h2>Demandes de réservations à traiter:</h2>
-                <table id="toProcessBooking" class="table  table-bordered border-black table-sm table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Date et Heure début</th>
-                            <th scope="col">Date et Heure fin</th>
-                            <th scope="col">Borne, Lieu, Ville, Utilisateur</th>
-                            <th scope="col">Montant réglé</th>
-                            <th scope="col">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Demandes de réservations à traiter:</h2>
+                    <table id="toProcessBooking" class="table  table-bordered border-black table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date et Heure début</th>
+                                <th scope="col">Date et Heure fin</th>
+                                <th scope="col">Utilisateur</th>
+                                <th scope="col">Borne, Lieu</th>
+                                <th scope="col">Montant réglé</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">06/10/2023 06:00</td>
+                                <td>06/10/2023 13:00</td>
+                                <td>Pierre MARTIN</td>
+                                <td>Borne 1; 8 rue Mozart</td>
+                                <td>28.00€</td>
+                                <td>
+                                    <a href="#">Accepter</a>
+                                    <a href="#">Refuser</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">12/10/2023 10:00</td>
+                                <td>12/10/2023 14:00</td>
+                                <td>Capucine DUPONT</td>
+                                <td>Borne 1; 4 Avenue de la République</td>
+                                <td>16.00€</td>
+                                <td>
+                                    <a href="#">Accepter</a>
+                                    <a href="#">Refuser</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row">20/10/2023 13:00</td>
+                                <td>21/10/2023 18:00</td>
+                                <td>Louise SANTI</td>
+                                <td>Borne 2; 8 rue Mozart</td>
+                                <td>20.00€</td>
+                                <td>
+                                    <a href="#">Accepter</a>
+                                    <a href="#">Refuser</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <div class="col-md-12">
-                <h2>Demandes de réservations traitées:</h2>
-                <table id="processedBooking" class="table table-bordered border-black table-sm table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">Date et Heure début</th>
-                            <th scope="col">Date et Heure fin</th>
-                            <th scope="col">Utilisateur</th>
-                            <th scope="col">Borne, Lieu</th>
-                            <th scope="col">Montant réglé</th>
-                            <th scope="col">Statut</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Demandes de réservations traitées:</h2>
+                    <table id="processedBooking" class="table table-bordered border-black table-sm table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Date et Heure début</th>
+                                <th scope="col">Date et Heure fin</th>
+                                <th scope="col">Utilisateur</th>
+                                <th scope="col">Borne, Lieu</th>
+                                <th scope="col">Montant réglé</th>
+                                <th scope="col">Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">26/09/2023 06:00</td>
+                                <td>26/09/2023 13:00</td>
+                                <td>Stephane HENRI</td>
+                                <td>Borne 1; 8 rue Mozart</td>
+                                <td>18.00€</td>
+                                <td>Accepté</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">27/09/2023 20:00</td>
+                                <td>28/09/2023 04:00</td>
+                                <td>Rachel DOS SANTOS</td>
+                                <td>Borne 1; 4 avenue de la République</td>
+                                <td>32.00€</td>
+                                <td>Refusé</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">28/09/2023 13:00</td>
+                                <td>28/09/2023 18:00</td>
+                                <td>Margaux CELLARIER</td>
+                                <td>Borne 2; 8 rue Mozart</td>
+                                <td>20.00€</td>
+                                <td>Accepté</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </main>
