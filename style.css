@@ -44,15 +44,14 @@ table{
     border: solid var(--EBRichBlack) 2px;
 }
 
+.pagination{
+    margin: 10px;
+}
+
 .page-link {
     color: black;
     border: solid black 1px;
     border-radius: 5px;
-}
-
-.tableAnchors{
-    margin-top: 0px;
-    margin-bottom: 15px;
 }
 
 .imgBorne{
@@ -83,11 +82,17 @@ footer{
     color: var(--EBWhite);
 }
 
-@media all and (min-width:700px) {
+@media all and (min-width:320px) {
     #borneLocation{
         order:1;
     }
     #toProcessBooking, #processedBooking{
         order:2
+    }
+    .tableAnchors{
+        order: -1;
+    }
+    .navPagination{
+        width: 100%;
     }
 }
