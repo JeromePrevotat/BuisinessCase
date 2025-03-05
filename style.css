@@ -33,6 +33,7 @@ h3{
     font-family: "Maven Pro", Arial, sans-serif;
     font-size: 24px;
     background-color: var(--EBLemon);
+    border-radius: 5px;
 }
 
 nav{
