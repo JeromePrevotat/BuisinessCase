@@ -26,21 +26,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Mes Bornes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link" href="#">Profil</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +41,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Mes réservations en cours:</h2>
-                    <table id="booked" class="table table-sm table-hover table-bordered border-black">
+                    <table id="booked" class="table table-responsive-sm table-hover table-bordered border-black">
                         <thead>
                             <tr>
                                 <th scope="col">Date et Heure début</th>
@@ -86,18 +75,18 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="#">Effectuer une réservation</a>
                 </div>
+                <a class="tableAnchors" href="#">Effectuer une réservation</a>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <h2>Mes réservations en passées:</h2>
                     <div id="filterBar" class="d-flex">
-                        <input type="datetime-local">
-                        <input type="datetime-local">
-                        <button class="submit">Filtrer</button>
+                        <input class="filterComponent" type="datetime-local">
+                        <input class="filterComponent" type="datetime-local">
+                        <button class="filterComponent" class="submit">Filtrer</button>
                     </div>
-                    <table id="pastBooking" class="table table-bordered border-black table-sm table-hover">
+                    <table id="pastBooking" class="table table-bordered border-black table-responsive-sm table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Date et Heure début</th>
@@ -135,9 +124,9 @@
                             </tr>
                         </tbody>
                     </table>
-                    <a href="#">Exporter toutes les réservations au format Excel</a>
                 </div>
             </div>
+            <a href="#">Exporter toutes les réservations au format Excel</a>
             <div id="borneLocation" class="col-md-12">
                 <h2>Lieux de recharge:</h2>
                 <div class="row">
@@ -145,7 +134,7 @@
                         <div class="d-flex flex-wrap">
                             <div class="borneTitle d-flex flex-column">
                                 <h3>Borne 1</h3>
-                                <p>Adresse</p>
+                                <p>8 rue Mozart</p>
                             </div>
                             <div class="container">
                                 <div class="row">
@@ -168,8 +157,8 @@
                     <div class="col-md-6">
                         <div class="d-flex flex-wrap">
                             <div class="borneTitle d-flex flex-column">
-                                <h3>Borne 1</h3>
-                                <p>Adresse</p>
+                                <h3>8 rue Mozart</h3>
+                                <p>Borne 1</p>
                             </div>
                             <div class="container">
                                 <div class="row">
@@ -194,7 +183,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Demandes de réservations à traiter:</h2>
-                    <table id="toProcessBooking" class="table  table-bordered border-black table-sm table-hover">
+                    <table id="toProcessBooking" class="table table-responsive-sm table-bordered border-black table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Date et Heure début</th>
@@ -246,7 +235,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Demandes de réservations traitées:</h2>
-                    <table id="processedBooking" class="table table-bordered border-black table-sm table-hover">
+                    <table id="processedBooking" class="table table-responsive-sm table-bordered border-black table-hover">
                         <thead>
                             <tr>
                                 <th scope="col">Date et Heure début</th>

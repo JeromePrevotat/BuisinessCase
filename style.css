@@ -6,12 +6,44 @@
     --EBWhite: #FFFCFF;
 }
 
+@font-face {
+    font-family: "Maven Pro";
+    src: url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap");
+}
+
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+*{
+    font-family: "Roboto Condensed", Arial, sans-serif;
+}
+
+
+h2{
+    margin-top: 15px;
+    font-family: "Maven Pro", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Maven Pro", Arial, sans-serif;
+    font-size: 24px;
+}
+
 nav{
     background-color: lightgreen ;
 }
 
 table{
     border: solid var(--EBRichBlack) 2px;
+}
+
+.tableAnchors{
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 .borneTitle{
@@ -26,6 +58,15 @@ table{
 
 #filterBar{
     width: 100%;
+    margin-bottom: 10px;
+}
+
+#filterBar:hover{
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.filterComponent{
+    margin-right: 5px;
 }
 
 footer{
