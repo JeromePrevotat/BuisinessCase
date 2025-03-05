@@ -24,6 +24,10 @@ table{
     height: 250px;
 }
 
+#filterBar{
+    width: 100%;
+}
+
 footer{
     background-color: var(--EBRichBlack);
     height: 100px;
