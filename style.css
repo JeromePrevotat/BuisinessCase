@@ -75,6 +75,10 @@ table{
     border-radius: 5px;
 }
 
+.tableAnchors{
+    margin: 0 30px;
+}
+
 .imgBorne{
     margin: 10px;
     width: 200px;
@@ -104,7 +108,7 @@ footer{
     color: var(--EBWhite);
 }
 
-@media all and (min-width:321px) {
+@media all and (min-width:426px) {
     #borneLocation{
         order: 1;
     }
