@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
@@ -65,4 +66,12 @@ public class BorneService {
     public boolean existsById(Long id) {
         return borneRepository.existsById(id);
     }
+
+    public List<Borne> get_nearby_borne(BigDecimal longitude, BigDecimal latitude, int rayon, List<Borne> bornes) {
+        throw new UnsupportedOperationException("Méthode non implémentée");
+    }
+
+    // get_free_borne(time){}
+
+    // get_free_nearby_borne(longitude, latitude, time){}
 } 
